@@ -14,11 +14,6 @@ const FeeDetail = (props) => {
 
     const apiKey = process.env.REACT_APP_API_KEY;
 
-    // let collegeTotFee=100000;
-    // let busTotFee=30000;
-    // let activityTotFee=3000;
-    // let esdpTotFee=1500;
-    // let alumniTotFee=1000;
     let collegeTotFee=process.env.REACT_APP_COLLEGE_FEE;
     let busTotFee=process.env.REACT_APP_BUS_FEE;
     let activityTotFee=process.env.REACT_APP_ACTIVITY_FEE;
