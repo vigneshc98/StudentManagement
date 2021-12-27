@@ -1,0 +1,117 @@
+.menuContainer{
+    position: absolute;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subContainer{
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    position: relative;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.H4{
+    margin-left: 0.5rem;
+}
+.H4:hover{
+    color: #87b2f1;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.li{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #mainNav{
+    width: 5rem;
+    left: 10px;
+    position: relative;
+}
+li{
+    list-style-type: none;
+} */
+/* #mainNav {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+} */
+/* a:hover{
+    color: #2386ff;
+    transition: 0.5s;
+} */
+
+/* .h4{
+    color: white;
+    font-size: 1.08rem;
+    text-decoration: none;
+}
+.h4:hover{
+    background-color: #619df7;
+}
+.span:hover{
+    background-color: #619df7;
+}
+
+.menuContainer{
+    width: 8rem;
+    position: relative;
+} */
+
+/* #signInDiv{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 1.5rem;
+    top: 3px;
+}
+#signOutDiv{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 1.5rem;
+    top: 3px;
+} */
+/* #singOutDivH4{
+    margin-left: 8px;
+    font-size: 1.22rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+#singInDivH4{
+    margin-left: 8px;
+    font-size: 1.22rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+} */

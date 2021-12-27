@@ -1,0 +1,25 @@
+.footerDiv{
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1.7rem;
+    /* background-color: #333333 ; */
+    background-color: #09274b; 
+}
+#para{
+    display: flex;
+}
+#para a{
+   padding: 1rem;
+   color: #d1d1d1;
+   text-decoration: none;
+}
+#para a:hover{
+    color: rgb(158, 157, 157);
+}
+#para p{
+    color: #d1d1d1;
+
+}

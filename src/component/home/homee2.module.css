@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+.containerHome2{
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    /* overflow: hidden; */
+}
+
+.textdiv{
+    width: 80vw;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2{
+    font-family: 'Lato', sans-serif;
+    color: #094183;
+}
+.p{
+    font-family: 'Lato', sans-serif;
+    color: #094183;
+    font-size: 1.1rem;
+}

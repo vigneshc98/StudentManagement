@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87b0ec;
+    position: relative;
+}
+
+.spinnerDiv{
+    width: 2rem;
+    height: 2rem;
+}
+
+.subContainer{
+    width: 28%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.form{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    position: relative;
+    left: 0.9rem;
+    bottom: 0.9rem;
+}
+
+.textdiv{
+    font-family: 'Lato', sans-serif;
+    width: 26.89rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    color:#21539e;
+}
+
+.input{
+    width: 22rem;
+    height: 3.1rem;
+    border: none;
+    background-color: rgb(192, 185, 185);
+    color: rgb(66, 65, 65);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    border-radius: 3px;
+    outline: none;
+}
+.input:focus{
+    outline: auto;
+    outline-color:#618fd4 ;
+}
+
+.btn{
+    width: 23.2rem;
+    height: 3.1rem;
+    border: none;
+    background-color: #21539e;
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #19417e;
+}
+
+.checkdiv{
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color:#3768b3;
+    font-size: 0.9rem;
+}
+.checkdivP{
+    position: relative;
+    bottom: 1.5px;
+}
+
+.spinner{
+    position: relative;
+    right: 30rem;
+    top: 1rem;
+}

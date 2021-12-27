@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.subContainer{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    /* border: 3px solid rgb(219, 16, 16); */
+    justify-content: center;
+}
+
+.subContainer2{
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid green; */
+    height: 50%;
+}
+.subContainer3{
+    width:66.4%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid green; */
+    height: 50%;
+}
+
+.inputMain{
+    width: 19.5rem;
+    height: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    border: none;
+    box-shadow: 0px 0px 15px 2px rgb(187, 187, 187);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    justify-content: space-between;
+    position: relative;
+    top: 2rem;
+    /* padding: 1rem; */
+}
+
+.CardUpper{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.CardMid{
+    position: relative;
+    top: 1rem;
+}
+
+.H1{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.H1Main{
+   display: flex;
+}
+
+.icon{
+    position: relative;
+    right: 3rem;
+    font-size: 3rem;
+}
+
+.iconImg{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.inputSubMain{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+}
+.inputSubMainRed{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 44, 44);
+}
+
+.input{
+    border: none;
+    position: relative;
+    top: 3px;
+    outline: none;
+}
+
+.btn{
+    height: 3rem;
+    background-color: rgb(255, 52, 52);
+    color: white;
+    border: none;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: rgb(255, 0, 0) ;
+}
+.disableBtn{
+    height: 3rem;
+    background-color: rgb(241, 156, 156);
+    color: white;
+    border: none;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
