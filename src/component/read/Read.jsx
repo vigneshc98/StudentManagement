@@ -4,7 +4,6 @@ import PostData from '../hoc/PostDataHOC';
 import { Link } from 'react-router-dom';
 import css from './read.module.css'
 import Spinner from '../spinner/Spinner';
-import { toast } from 'react-toastify';
 
 const Read = () => {
 
