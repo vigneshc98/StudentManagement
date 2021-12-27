@@ -21,21 +21,6 @@ const PostData = (Wrappedcomponent,hold,rout) => {
             let varid;
             let res;
 
-            // console.log("---in HOC----");
-            // console.log(rout);
-            // console.log(id);
-            // console.log(typeof(id));
-            // console.log(usn);
-            // console.log(name);
-            // console.log(dept);
-            // console.log(sem);
-            // console.log(collgefees);
-            // console.log(busfees);
-            // console.log(activityfee);
-            // console.log(ESDPfee);
-            // console.log(alumnifee);
-            // console.log("-------");
-
             switch(hold){
                 case 'post': axiosType=axios.post; break;
                 case 'put': axiosType=axios.put;
@@ -45,7 +30,7 @@ const PostData = (Wrappedcomponent,hold,rout) => {
                                 break;
                 default: navigate('/')
             }
-            // console.log('Testing HOC:',(name&&usn&&dept&&sem&&collgefees&&busfees&&activityfee&&ESDPfee&&alumnifee)!=undefined);
+            
             if((name&&usn&&dept&&sem&&collgefees&&busfees&&activityfee&&ESDPfee&&alumnifee)!=undefined || hold==='delete'){
                 e.preventDefault();
                 const toastPromise= new Promise((resolve, reject) => {
