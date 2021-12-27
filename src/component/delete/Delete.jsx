@@ -42,7 +42,6 @@ const Delete = (props) => {
         axios.get(`${apiKey}/${id}`)
         .then((response)=>{
              setstudList(response.data);
-             console.log(response.data);
         })
         .catch((error)=>{
             console.log(error);

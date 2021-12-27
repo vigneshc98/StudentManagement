@@ -27,7 +27,6 @@ const Login = () => {
             await login(email,password);
             setLoaidng(false);
             navigate("/main")
-            // toast.success("SingIn successfull");
         } 
         catch (error) {
             toast.error(error.message);
