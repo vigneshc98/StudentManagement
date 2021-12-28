@@ -5,9 +5,11 @@
 }
 
 .container{
+    /* width: 100%; */
     height: 100%;
     /* background-color: #ecedee!important; */
     background-image: linear-gradient(#dfdfdf, white);
+    /* overflow-x: hidden; */
 
 }
 
@@ -93,8 +95,12 @@
 .subContainer2{
     /* border: 1px solid red; */
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3px;
 }
 
 .table{
@@ -174,4 +180,27 @@
 }
 .FeeDetBtn:hover{
     background-color: #5035b1;
+}
+
+.loadMore{
+    display: flex;
+    height: 2rem;
+    margin-bottom: 7px;
+}
+
+.loadMoreBtn{
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    background-color: #4277c5;
+    color: aliceblue;
+    border-radius: 3px;
+    cursor: pointer;    
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    right: 2rem;
+}
+.loadMoreBtn:hover{
+    background-color: #2557a1;
 }

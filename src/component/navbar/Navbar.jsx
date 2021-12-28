@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Menu from './Menu'
 import './navCss.css'
 let url = './images/navIcon.jpg'
@@ -15,6 +16,11 @@ const Navbar = () => {
                         <div className="textdiv">
                             <p>Mangalore Institute Of Technology And Engineering - [MITE]</p>
                         </div>
+                    </div>
+                    <div className="midNdiv">
+                        <Link to="/main">
+                           <p>Home</p>
+                        </Link>
                     </div>
                     <div id="spclDesing">
                         <div className="triangle"></div>

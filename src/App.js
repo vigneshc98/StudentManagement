@@ -16,6 +16,7 @@ import Footer from './component/footer/Footer';
 import Home2 from './component/home/Home2';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Error from './component/error/Error';
 
 function App() {
   return (
@@ -65,10 +66,12 @@ function App() {
                  } />
               <Route path="/feedetail" element={ 
                   <ProtectedRoute>  
+                    <Navbar/>
                     <ToastContainer />  
                     <FeeDetail/> 
                   </ProtectedRoute>
                  } />
+              <Route path="*" element={<Error/>} />
             </Routes>
           </Router>
       </AuthContextProvider>

@@ -12,8 +12,7 @@ const PublicRoute = ({children, props}) => {
 
     return (
         <>
-           {/* {children, props} */}
-           <Navigate to="/main"/>
+           <Navigate replace to="/main"/>
         </>
     )
 }

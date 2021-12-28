@@ -110,7 +110,7 @@ const FeeDetail = (props) => {
                 <div className={css.subContainer2}>
 
                         <div className={css.inputMain}>
-                            <div className={css.CardUpper}>
+                            <div className={css.CardUpper}> 
                                 <div className={css.inputSubMain}>
                                     <h1 className={css.H1}>College-Fee</h1>
                                     <div className={css.icon}>

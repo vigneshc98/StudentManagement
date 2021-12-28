@@ -1,42 +1,68 @@
 import React,{useState,useEffect, Fragment} from 'react';
 import axios from 'axios';
-import PostData from '../hoc/PostDataHOC';
+// import PostData from '../hoc/PostDataHOC';
 import { Link } from 'react-router-dom';
 import css from './read.module.css'
 import Spinner from '../spinner/Spinner';
+import {useDispatch} from 'react-redux'
+import { actionCreators } from '../state/index'
 
 const Read = () => {
 
+    const dispatch = useDispatch();
+
     const apiKey = process.env.REACT_APP_API_KEY;
+    const EnvPageSize = Number(process.env.REACT_APP_PAGE_SIZE);
 
     const [studList, setstudList] = useState([]);
-    const [searchUSN, setSearchUSN] = useState("")
+    const [searchUSN, setSearchUSN] = useState("");
+    const [pageSize, setPagesize] = useState(EnvPageSize);
+
+    const [totLength, setTotLength] = useState(null);
 
     const [hide, setHide] = useState(true);
 
     const [loading, setLoading] = useState(false)
 
     const getData = () =>{
-        setLoading(true);
-        axios.get(`${apiKey}?search=${searchUSN}`)
+        searchUSN=='' && setLoading(true);
+        axios.get(`${apiKey}?search=${searchUSN}&page=1&limit=${pageSize}`)
         .then((response)=>{
             setLoading(false)
             setstudList(response.data);
+            console.log(response.data);
         })
         .catch((error)=>{
             console.log(error);
         });
     }
-  
 
     useEffect(() => {
         getData();
+        axios.get(`${apiKey}`)
+        .then((response)=>{
+            setTotLength((response.data).length);
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
         localStorage.removeItem("ID");
+        dispatch(actionCreators.setName(undefined));
     }, [])
+
+    useEffect(() => {
+        getData();
+    }, [pageSize]);
 
     const sendData = (id) => {
         localStorage.setItem("ID",id);
-    } 
+    }
+
+    const incPageSize = () => {
+        setPagesize(pageSize+10, console.log('pageSize:',pageSize));
+    }
+
+
     let i=1;
 
     const Show = (props) => {
@@ -105,7 +131,6 @@ const Read = () => {
                             {hide ? <th className={css.thAction}>Actions</th> : <th className={css.thAction2}>Actions&ensp;<i className="fas fa-edit" onClick={()=>{setHide(true)}} style={{cursor:'pointer'}}></i></th>}
                         </tr>
                     </thead>
-                    {loading && <Spinner/>}
                     {
                         studList.map(data => {return (
                                 <tbody key={data.id} className={css.tbody}>
@@ -121,10 +146,13 @@ const Read = () => {
                         )})
                     }
                 </table>
-         </div>  
-       
+            </div>  
+            <div className={css.loadMore}>
+                    {loading && <Spinner/>}
+                    {totLength > pageSize && <button onClick={incPageSize} className={css.loadMoreBtn}><i class="fas fa-chevron-circle-down" style={{color:'white'}}></i>&ensp;Load more</button>}
+             </div>
         </div>
     )
 }
 
-export default PostData(Read)
+export default Read
